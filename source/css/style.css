@@ -1,0 +1,679 @@
+* {
+  box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+font-family: 'Poppins', sans-serif !important;
+  line-height: 1.6;
+}
+.pad_0 {
+  padding: 0px !important;
+}
+
+.mar_0 {
+  margin: 0 !important;
+}
+.mar_t1{
+  margin-top: 1em;
+}
+.mar_t2{
+  margin-top: 2em;
+}
+.mar_b2{
+  margin-bottom: 2em;
+}
+a,a:hover{
+  text-decoration: none !important;
+}
+
+#top {
+  background: #000;
+}
+.top_text {
+  font-size: .8em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  padding: .5em 0em;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+/*------------ LOgo header css-----------------*/
+div#ui-datepicker-div {
+    background: #fff none repeat scroll 0 0;
+    z-index: 99999;
+    border:1px solid #eee;
+}
+.logo_header {
+  padding: 2em 0em;
+}
+.logo_header .logo {
+  font-size: 1.7em;
+  color: #666;
+}
+
+.top_rt_hdr .search_dropdwn {
+  display: none;
+}
+.top_rt_hdr .my_ac_menu ul {
+  list-style: none;
+}
+.top_rt_hdr .my_ac_menu ul li {
+  display: inline-block;
+}
+.top_rt_hdr .my_ac_menu ul a {
+  color: #333;
+  padding: 0.6em 1em;
+  font-size: 0.83em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.search_input {
+  padding: 0.4em 0.6em;
+  width: 86%;
+  letter-spacing: 0.15em;
+}
+
+.search_btn {
+  cursor: pointer;
+  position: relative;
+}
+.search_btn input {
+  background: transparent none repeat scroll 0 0;
+  padding: 0.4em 1em;
+  width: 12%;
+}
+
+.search_btn:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 7px;
+}
+
+.search_br form {
+  border: 2px solid #ddd;
+}
+.search_br form input {
+  border: medium none !important;
+}
+
+/*------------ LOgo header css end-----------------*/
+/*------------main - navbar start*/
+.main_nav {
+  border-radius: 0 !important;
+}
+
+.menu_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_wrap li a {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 0.9em;
+  letter-spacing: 0.1em
+}
+.main_menu a:hover{
+
+}
+.dropdown_menu {
+  display: none;
+  height: 40em;
+  left: -1px;
+  position: absolute;
+  width: 101%;
+  box-shadow:-4px 7px 12px #ddd;
+  z-index: 9999;
+  background: #fff;
+  transition: all linear .3s;
+  background: #fff;
+}
+.dropdown_menu:hover {
+  display: block;
+}
+
+.main_menu {
+  position: static !important;
+}
+.main_menu:hover .dropdown_menu {
+  display: block;
+}
+
+.sub_menu_hed {
+  font-size: 1.15em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.6em;
+}
+
+.submenu_list {
+  padding: 0;
+  list-style: outside none none;
+}
+
+.submenu {
+  padding-left: 2.2em;
+}
+
+.submenu_list .item a {
+  color: #333;
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: normal;
+  padding-bottom: 4px;
+  text-transform: capitalize;
+}
+.collapse.navbar-collapse.hvr-underline-reveal {
+    padding: 0;
+}
+/*------------main - navbar ------- end*/
+
+
+/*-----------banner css---------------*/
+.banner {
+    align-items: center;
+    background-image: url("../images/bnr_3.jpg");
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 43em;
+    overflow: hidden;
+    position: relative;
+}
+.big_prodct{
+
+}
+
+.banner .layer {
+    background: rgba(0, 0, 0, 0.3) repeat scroll 0 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    left: 0;
+}
+
+.bnr_input_div > form {
+    background: transparent;
+}
+
+
+/*----------datepicker css-start*/
+table.ui-datepicker-calendar td{
+    padding: .5em .9em;
+  text-align: center;
+  transition: background-color 300ms ease-in-out;
+}
+
+
+table.ui-datepicker-calendar td:hover,table.ui-datepicker-calendar td:focus {
+    background: rgb(43,188,238);
+
+}
+
+table.ui-datepicker-calendar td:hover a{
+      color: #fff;
+      transition: background-color 300ms ease-in-out;
+}
+
+table.ui-datepicker-calendar{
+  min-height: 220px;
+}
+td.ui-datepicker-other-month.ui-state-disabled:hover {
+    background: transparent;
+}
+.ui-datepicker-next{
+    float: right;
+}
+.ui-datepicker-prev{
+  float: left;
+}
+.ui-datepicker-title {
+    color: rgba(0, 0, 0, 0.73);
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-top: 0.4em;
+    text-align: center;
+}
+table.ui-datepicker-calendar tr:nth-child(1) {
+    color: #888;
+}
+
+table.ui-datepicker-calendar tr:nth-child(1) span{
+  padding-left: 1em;
+}
+.ui-datepicker-header {
+    padding-bottom: 1.3em;
+}
+.ui-datepicker-next,.ui-datepicker-prev{
+
+    background: #ddd;
+  transition: background-color 300ms ease-in-out;
+}
+.ui-datepicker-next:hover,.ui-datepicker-prev:hover{
+cursor: pointer;
+background: #ddd; 
+text-decoration: none;
+}
+.ui-datepicker-next, .ui-datepicker-prev {
+    background: #888 none repeat scroll 0 0;
+    padding: 0.4em 0.84em;
+    transition: background-color 300ms ease-in-out 0s;
+    color: #eee;
+}
+.ui-state-active{
+  background: #eee;
+}
+/*----------------datepiker --end*/
+.form_wrp {
+    background: rgba(0, 0, 0, 0.2) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5em;
+}
+.form_wrp select {
+    -moz-appearance: none;
+    appearance:none;
+    -webkit-appearance:none;
+    background: #eee none repeat scroll 0 0;
+    border: 4px solid #ccc;
+    padding: 0.5em 0.9em;
+     width: 100%;
+
+}
+.form_wrp input{
+ background: #eee none repeat scroll 0 0;
+    border: 4px solid #ccc;
+
+}
+.form_wrp option{
+      padding: 0.1em 0.9em;
+}
+.bnr_input_div {
+    position: relative;
+    z-index: 2;
+    width: 75%;
+}
+.search_all_input input {
+    background: #666 none repeat scroll 0 0;
+    color: #eee;
+    font-size: 1.2em;
+    padding: 0.5em 2.5em;
+}
+.date_picker::after {
+    color: #666;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 1.5em;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+.date_picker{
+  position: relative;
+}
+.date_picker input {
+    padding: 0.75em;
+}
+/*-----------banner end---------------*/
+.about_rent_div{
+  background: #eee;
+  min-height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark_rent{
+  background: #ccc !important;
+}
+.about_rent_div a{
+
+}
+.about_rent_div h4{
+  color: #333;
+}
+.small_prodct_wrp_head{
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+.small_prodct_wrp_head em {
+    font: italic 30px/36px Garamond;
+    letter-spacing: 1.5px;
+}
+.designer {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    margin: 0.4em 0;
+    text-transform: uppercase;
+}
+.name {
+    font: italic 14px/15px Garamond;
+    margin: .4em 0;
+}
+.rent_hvr{
+    background: #000 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font: italic 17px/22px Garamond;
+    left: 38%;
+    opacity: 0;
+    padding: 0.3em 1em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    transform: scale(1);
+    transition: opacity 500ms linear 0s;
+}
+.small_img:hover .rent_hvr,.product_img:hover .rent_hvr{
+    opacity: 1;
+
+}
+.rent_hvr:hover{
+  color: #ccc;
+}
+.prodct_detail{
+    color: #333;
+}
+.small_img img {
+    height: 100%;
+    transition: transform ease-in-out 400ms;
+    transform: scale(0.9);
+}
+.small_img:hover.small_img img {
+    transform: scale(1);
+}
+.rent_btns {
+    font: italic 600 20px/22px Garamond;
+}
+
+.small_img {
+    align-items: center;
+    display: flex;
+    height: 24em;
+    justify-content: center;
+    position: relative;
+}
+.product{
+  
+}
+.product_main{
+  margin-bottom: 1.4em;
+}
+.big_img {
+    background: rgba(0, 0, 0, 0) url("../images/pro_bgi_model.jpg") repeat scroll center center / cover ;
+  
+}
+.big_img_2,.big_img {
+    min-height: 57em;
+}
+.big_img_2{
+    background: rgba(0, 0, 0, 0) url("../images/bnr_3.jpg") repeat scroll center center / cover ;
+    
+}
+
+
+
+.big_prodct_detail p {
+    color: #666;
+    font: italic 21px/25px Garamond;
+}
+.rent_btnl {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font: italic 23px/23px Garamond;
+    margin-top: 0.5em;
+    padding: 0.35em 1em;
+}
+/*------------footer---------------*/
+.footer_wrp{
+  background: #333;
+  color: #fff;
+}
+.footer_wrp{
+  padding: 5em !important;
+}
+.footer_menu li{
+
+}
+.footer_menu li a {
+    color: #ddd;
+    display: inline-block;
+    font-weight: 600;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+.footer_logo,.logo{
+    border: 3px solid #eee;
+    color: #ddd;
+    display: inline-block;
+    font: italic 26px/34px Garamond;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+    padding: 0.3em 0.5em;
+    text-transform: capitalize;
+}
+.footer_input span{
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_input input{
+  border: none;
+  background: transparent;
+}
+.submit_input {
+    background: #ddd none repeat scroll 0 0 !important;
+    color: #333;
+    padding: 0.6em 1em;
+}
+.submit_input:hover{
+  background:#eee !important; 
+}
+.footer_input p{
+      margin-top: 1em;
+    text-align: center;
+}
+.footer_input label {
+    background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+    margin: 0;
+    padding: 0.4em;
+}
+.subscribe_input {
+    padding: 0.3em 0.7em;
+    width: 100%;
+}
+/*-------------------sidebar start------------------------*/
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  cursor: pointer;
+}
+
+[type="checkbox"] + label::after{
+    border: 2px solid #ddd;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: all ease-in-out .3s;
+}
+[type="checkbox"]:checked + label:after {
+  background:#333;
+}
+[type="checkbox"]:checked + label:before {
+  opacity: 1;
+  transform: scale(1);
+}
+[type="checkbox"]:checked + label .size_num{
+  color: #fff !important;
+    font-size: 0.85em;
+    font-weight: 600;
+    left: 26%;
+    top: 18%;
+}
+.size_filter {
+    list-style: outside none none;
+    max-width: 135px;
+}
+.size_num {
+    color: #333;
+    font-size: 1em;
+    left: 40%;
+    position: absolute;
+    top: 23%;
+    transition: all 0.4s ease 0s;
+    z-index: 1;
+}
+.checkbox label{
+  position: relative;
+    display: inline-block;
+    padding: 1.2em;
+}
+.checkbox{
+  margin: 0!important;
+}
+
+.size_filter li{
+  display: inline-block;
+      margin-left: 0.1em;
+}
+.side_br_head {
+    color: #666;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.slider_range_price span {
+    font-size: 0.85em;
+    font-weight: 600;
+}
+.rental_filter .ui-slider-range {
+  background: #666 !important;
+   background-position: 0 0;
+    border: 0 none;
+    display: block;
+    font-size: 0.7em;
+    position: absolute;
+    z-index: 1;
+        height: 100%;
+    top: 0;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -0.06em;
+    top: -0.5em !important;
+    z-index: 1 !important;
+    background: #eee;
+     cursor: default;
+    height: 1.2em;
+    position: absolute;
+    width: 1.2em;
+    z-index: 2;
+}
+
+.rental_filter >  .ui-widget-content .ui-state-default {
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    color: #555555;
+    font-weight: normal;
+    height: 18px !important;
+    cursor: grab !important;
+    width: 18px !important;
+
+}
+
+.slider_range_price {
+    height: 35px;
+    margin-top: 20px;
+}
+.ui-slider-horizontal {
+    height: 3px !important;
+}
+.rental_filter .ui-widget-content {
+    background: #ddd !important;
+    color: #222222;
+    border: none !important;
+    margin-top: 1.3em;
+    font-size: 1.1em;
+}
+.rental_filter .ui-slider{
+  position: relative;
+}
+.date_input{
+  position: relative;
+}
+.date_input input{
+  border: 2px solid #ddd;
+  padding: .2em;
+  width: 100%;
+}
+.date_input::after {
+    color: #666;
+    content: "";
+    font-family: FontAwesome;
+    font-size: 1.2em;
+    position: absolute;
+    right: 6%;
+    top: 0;
+}
+/*-------------------sidebar end------------------------*/
+.product_img{
+  height: 25em;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: all ease-in-out 300ms;
+}
+.product_img img{
+  height: 100%;
+}
+.price {
+    display: block;
+    font: italic 19px/24px Garamond;
+}
+.product_list{
+  padding-left: 3em !important; 
+}
+.product_box{
+  margin: 1em 0;
+}
+.sidebar {
+    transition: all  ease .3s;
+    max-width: 150px;
+    width: 100%;
+}
+.sidebar.fixed{
+  position: fixed !important;
+}
+.designer_input select{
+   border: 2px solid #ddd;
+   width: 100%;
+   padding: .1em;
+ -moz-appearance:none;
+ appearance:none;
+ -webkit-appearance:none;
+}

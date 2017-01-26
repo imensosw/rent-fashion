@@ -1,0 +1,3 @@
+** Purchasify 1.2 Update is a MAJOR security update so you need to make this update in order to continue using Purchasify.
+
+# Just move all files in "Update > x-Vendor" to your directory and overwrite existing files. Done!

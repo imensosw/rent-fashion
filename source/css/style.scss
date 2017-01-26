@@ -1,0 +1,162 @@
+*{
+	margin:0;
+	padding:0;
+}
+body {
+  margin: 0;
+	padding: 0 ; 		
+  color: #333;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+.pad_0{
+	padding:0px !important;
+}
+.mar_0{
+	margin:0 !important;
+}
+ a{
+ 	text-decoration: none;
+ }
+ #top{
+ 	background:#000;
+ }
+.top_text{
+	font-size: .8em;
+	letter-spacing:.2em;
+	text-transform: uppercase;
+	padding: .5em 0em;
+	color:#fff;
+	font-weight: 600;
+	text-align: center;
+}
+
+/*------------ LOgo header css-----------------*/
+.logo_header{
+	padding: 3em 0em 2em;
+	.logo{
+		font-size: 1.7em;
+		color: #666;
+	}
+}
+.top_rt_hdr{
+	.search_dropdwn{
+		display: none;
+	}
+	.my_ac_menu ul{
+		list-style: none;
+		li{
+			display: inline-block
+		}
+		a{
+			color: #333;
+			padding: 0.6em 1em;
+			font-size:0.75em;
+			font-weight: 600;
+			text-transform: uppercase;	
+		} 	
+	}
+}
+.search_input{
+		padding:0.4em 0.6em;
+		width: 86%;
+		letter-spacing: 0.15em;
+}
+.search_btn {	
+	cursor: pointer;
+	position: relative;
+	input{
+  	background: transparent none repeat scroll 0 0;
+    padding: 0.4em 1em;
+    width: 12%;
+
+	}
+}
+.search_btn:before{
+	content:"\f002";
+	font-family:FontAwesome;
+	position: absolute;
+	top:0;
+	left:7px;
+}
+.search_br form{
+	border:1px solid #ddd;
+	& input{
+		border:medium none !important;
+	}
+}
+
+/*------------ LOgo header css end-----------------*/
+
+
+/*------------main - navbar start*/
+.main_nav{
+	border-radius:0 !important;
+}
+.menu_wrap{
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+}
+.menu_wrap li a {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.dropdown_menu {
+    display: none;
+    height: 70em;	
+    left: 0;
+    position: absolute;
+    width: 100%;
+    box-shadow: -4px 9px 7px #ddd;
+    border-top: 4px solid #333;
+
+	&:hover{
+		display: block;
+	}
+}
+.main_menu {
+    position: static !important;
+	&:hover .dropdown_menu{
+		display: block;
+	}
+}
+.sub_menu_hed {
+    font-size: 1.15em;
+    text-transform: uppercase;
+    border-bottom:1px solid #333;
+     padding-bottom: 0.6em;
+}
+.submenu_list {
+	padding:0;   
+    list-style: outside none none;
+}
+.submenu {
+    padding-left: 2.2em;
+}
+.submenu_list .item a {
+    color: #333;
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: normal;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+}
+/*------------main - navbar ------- end*/
+.banner {
+    background-image: url("../images/banner_img.jpeg");
+    background-size: cover;
+    min-height: 50em;
+    width: 100%;
+  
+}
+/*.banner .layer {
+    background: rgba(0, 0, 0, 0.3) url("http://www.geologie.ens.fr/spiplabocnrs/seismes/dlf/unknown.png") repeat scroll 0 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+}*/

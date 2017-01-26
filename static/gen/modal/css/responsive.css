@@ -1,0 +1,110 @@
+
+@media only screen and (min-width: 320px) and (max-width: 361px){
+	.sidebar{
+		display: none;
+	}
+	.form_wrp {
+		background-color: transparent;
+	    display: flex;
+	    flex-direction: column;
+	    padding: 0;
+	}
+	.form_wrp span {
+		margin-bottom: 10px;
+	}
+	.banner {
+		background-position: -50% 0;
+	}
+	.size_select {
+    width: 230px !important;
+    }
+    .form_wrp input {
+    	width: 230px;
+    }
+    .navbar-toggle {
+    	background-color: #000;
+    }
+    .navbar-toggle span {
+    	color: #fff;
+    }
+    .my_ac_menu {
+    	margin-top: 10px;
+    }
+    .logo_header {
+    	padding-bottom: 0;
+    }
+    .t-body {
+    	padding-left: 20px;
+    }
+    .modal-wrap {
+    	width: 280px;
+    }
+    .modal-body {
+    padding: 1em !important;
+    }
+  /*  .brand_select select {
+    width: 100% !important;
+    }*/
+
+    .dropdown-content {
+    	left: -115px;
+    	top: 25px;
+    }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 480px){
+.sidebar{
+		display: block;
+	}
+
+	.form_wrp {
+		background-color: transparent;
+	    display: flex;
+	    flex-direction: column;
+	    padding: 0;
+	}
+	.form_wrp span {
+		margin-bottom: 10px;
+	}
+	.banner {
+		background-position: -50% 0;
+	}
+/*	.brand_select select {
+		width: 100% !important;
+	}*/
+	.size_select {
+    width: 100% !important;
+    }	
+    .date_picker input {
+    width: 100% !important;
+    } 
+     .navbar-toggle {
+    	background-color: #000;
+    }
+    .navbar-toggle span {
+    	color: #fff;
+    }
+
+}
+	
+@media only screen and (min-width: 481px) and (max-width:  768px){
+.sidebar{
+		display: none;
+	}
+	 .navbar-toggle {
+    	background-color: #000;
+    }
+    .navbar-toggle span {
+    	color: #fff;
+    }	
+	
+}
+
+@media only screen and (max-width: 980px){
+	.sidebar{
+		display: none;
+	}	
+	.product_list{
+		padding: 0 !important;
+	}
+}
